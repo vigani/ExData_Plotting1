@@ -18,7 +18,7 @@ plot(subselpow$Date, as.numeric(as.character(subselpow$Global_active_power)), pc
 lines(subselpow$Date, as.numeric(as.character(subselpow$Global_active_power)))
 ### Voltage
 plot(subselpow$Date, as.numeric(as.character(subselpow$Voltage)), pch = NA,
-     ylab = "Voltage", xlab = "")
+     ylab = "Voltage", xlab = "datetime")
 lines(subselpow$Date, as.numeric(as.character(subselpow$Voltage)))
 ### Sub meters
 plot(subselpow$Date, as.numeric(as.character(subselpow$Sub_metering_1)), pch = NA,
@@ -30,7 +30,7 @@ legend("topright", lty=c(1,1,1), col = c("black", "red", "blue"),
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 ### Global Reactive Power
 plot(subselpow$Date, as.numeric(as.character(subselpow$Global_reactive_power)), pch = NA,
-     ylab = "Global_reactive_power", xlab = "")
+     ylab = "Global_reactive_power", xlab = "datetime")
 lines(subselpow$Date, as.numeric(as.character(subselpow$Global_reactive_power)))
 ## Closse the png device
 dev.off()
